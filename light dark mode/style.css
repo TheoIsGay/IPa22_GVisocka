@@ -1,0 +1,17 @@
+html{
+    --color:pink;
+    --header-height: 100px;
+}
+h1{
+    color: var(--color);
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    height: var(--header-height);
+    
+}
+main{
+    padding-top: var(--header-height);
+}
