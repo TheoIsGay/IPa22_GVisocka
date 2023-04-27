@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input veidi</title>
+    <link rel ="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>HTML Input Types</h1>
+    <div class="grid-container">
+        
+            <div class="grid-item 1">
+                <b>button</b> <br>
+
+                <input class="button"
+                type="button"
+                value="button">
+                </div>
+            <div class="grid-item 2">
+                <b>checkbox</b> <br>
+                <fieldset>
+                    <div>
+                      <input type="checkbox" id="pussy" name="pussy" checked>
+                      <label for="pussy">Pussy</label>
+                    </div>
+                
+                    <div>
+                      <input type="checkbox" id="bitch" name="bitch">
+                      <label for="bitch">Bitch</label>
+                    </div>
+                </div>
+            <div class="grid-item 3">
+                <b>color</b> <br>
+                <div>
+                    <input type="color" id="fav-color" name="fav-color"
+                           value="#e66465">
+                    <label for="fav-color">Fav color</label>
+                </div>
+                </div>
+            <div class="grid-item 4">
+                <b>date</b> <br>
+                <input type="date" id="start" name="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2018-12-31">
+                </div>
+            <div class="grid-item 5">
+                <b>datetime-local</b> <br>
+                <input type="datetime-local" id="meeting-time"
+                    name="meeting-time" value="2018-06-12T19:30"
+                    min="2018-06-07T00:00" max="2018-06-14T00:00">
+                </div>
+            <div class="grid-item 6">
+                <b>email</b> <br>
+                <input type="email" id="email"
+                    pattern=".+@globex\.com" size="30" required>
+                </div>
+            <div class="grid-item 7">
+                <b>file</b> <br>
+                <input type="file"
+                    id="avatar" name="avatar"
+                    accept="image/png, image/jpeg">
+                </div>
+            <div class="grid-item 8">
+                <b>hidden</b> <br>
+                Well..it's hidden
+                </div>
+            <div class="grid-item 9">
+                <b>image</b> <br>
+                <div>
+                    <label for="userId">User ID</label>
+                    <input type="text" id="userId" name="userId">
+                  </div>
+                  
+                  <input type="image" id="image" alt="Login"
+                         src="login.png">
+            </div>
+            <div class="grid-item 10">
+                <b>month</b> <br>
+                <input type="month" id="start" name="start"
+                    min="2018-03" value="2018-05">
+                </div>
+            <div class="grid-item 11">
+                <b>number</b> <br>
+                <input type="number" id="tentacles" name="tentacles"
+                    min="10" max="100">
+                </div>
+            <div class="grid-item 12">
+                <b>password</b> <br>
+                <div>
+                    <label for="pass">Password (8 characters minimum):</label>
+                    <input type="password" id="pass" name="password"
+                           minlength="8" required>
+                </div>
+                
+                <input type="submit" value="Sign in">
+                </div>
+            <div class="grid-item 13">
+                <b>radio</b> <br>
+                <fieldset>
+                    <legend>Select a maintenance drone:</legend>
+                
+                    <div>
+                      <input type="radio" id="huey" name="drone" value="huey"
+                             checked>
+                      <label for="huey">Huey</label>
+                    </div>
+                
+                    <div>
+                      <input type="radio" id="dewey" name="drone" value="dewey">
+                      <label for="dewey">Dewey</label>
+                    </div>
+                
+                    <div>
+                      <input type="radio" id="louie" name="drone" value="louie">
+                      <label for="louie">Louie</label>
+                    </div>
+                </fieldset>
+                </div>
+            <div class="grid-item 14">
+                <b>range</b> <br>
+                <div>
+                    <input type="range" id="volume" name="volume"
+                           min="0" max="11">
+                    <label for="volume">Volume</label>
+                  </div>
+                  
+                  <div>
+                    <input type="range" id="cowbell" name="cowbell" 
+                           min="0" max="100" value="90" step="10">
+                    <label for="cowbell">Cowbell</label>
+                  </div>
+                </div>
+            <div class="grid-item 15">
+                <b>reset</b> <br>
+                <form>
+                    <div class="controls">
+                
+                        <label for="id">User ID:</label>
+                        <input type="text" id="id" name="id">
+                
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                
+                    </div>
+                </form>
+                </div>
+            <div class="grid-item 16">
+                <b>search</b> <br>
+                <label for="site-search">Search the site:</label>
+                <input type="search" id="site-search" name="q">
+                <button>Search</button>
+                </div>
+            <div class="grid-item 17">
+                <b>submit</b> <br>
+                <form>
+                    <div>
+                      <label for="example">Let's submit some text</label>
+                      <input id="example" type="text" name="text" />
+                    </div>
+                    <div>
+                      <input type="submit" value="Send" />
+                    </div>
+                  </form>
+                  <input type="submit" value="Send Request" />
+                </div>
+            <div class="grid-item 18">
+                <b>tel</b> <br>
+                <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+
+                <small>Format: 123-456-7890</small>
+                </div>
+            <div class="grid-item 19">
+                <b>text</b> <br>
+                <input type="text" id="name" name="name" required
+                    minlength="4" maxlength="8" size="10">
+                </div>
+            <div class="grid-item 20">
+                <b>time</b> <br>
+                <input type="time" id="appt" name="appt"
+                    min="09:00" max="18:00" required>
+
+                <small>Office hours are 9am to 6pm</small>
+                </div>
+            <div class="grid-item 21">
+                <b>url</b> <br>
+                <input type="url" name="url" id="url"
+                    placeholder="https://example.com"
+                    pattern="https://.*" size="30"
+                    required>
+                </div>
+            <div class="grid-item 22">
+                <b>week</b> <br>
+                <input type="week" name="week" id="camp-week"
+                    min="2018-W18" max="2018-W26" required>
+                </div>
+    </div>
+</body>
+</html>
